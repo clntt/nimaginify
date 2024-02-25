@@ -2,6 +2,7 @@
 const Home = () => {
   return ( 
     <div>
+      <h1>checking commit</h1>
       <p>Home Page</p>
 
     </div>
