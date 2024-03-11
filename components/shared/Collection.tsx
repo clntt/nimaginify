@@ -12,7 +12,7 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 import { transformationTypes } from "@/constants";
-import { IImage } from "@/lib/database/models/image.model";
+import { IImage } from "@/lib/models/image.model";
 import { formUrlQuery } from "@/lib/utils";
 
 import { Button } from "../ui/button";
@@ -73,7 +73,7 @@ export const Collection = ({
               className="collection-btn"
               onClick={() => onPageChange("prev")}
             >
-              <PaginationPrevious className="hover:bg-transparent hover:text-white" />
+              <PaginationPrevious className="hover:bg-transparent hover:text-white" size=''/>
             </Button>
 
             <p className="flex-center p-16-medium w-fit flex-1">
@@ -85,7 +85,7 @@ export const Collection = ({
               onClick={() => onPageChange("next")}
               disabled={Number(page) >= totalPages}
             >
-              <PaginationNext className="hover:bg-transparent hover:text-white" />
+              <PaginationNext className="hover:bg-transparent hover:text-white" size=''/>
             </Button>
           </PaginationContent>
         </Pagination>
