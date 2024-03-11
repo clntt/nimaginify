@@ -73,7 +73,7 @@ export const Collection = ({
               className="collection-btn"
               onClick={() => onPageChange("prev")}
             >
-              <PaginationPrevious className="hover:bg-transparent hover:text-white" size=''/>
+              <PaginationPrevious className="hover:bg-transparent hover:text-white" />
             </Button>
 
             <p className="flex-center p-16-medium w-fit flex-1">
@@ -85,7 +85,7 @@ export const Collection = ({
               onClick={() => onPageChange("next")}
               disabled={Number(page) >= totalPages}
             >
-              <PaginationNext className="hover:bg-transparent hover:text-white" size=''/>
+              <PaginationNext className="hover:bg-transparent hover:text-white" />
             </Button>
           </PaginationContent>
         </Pagination>
